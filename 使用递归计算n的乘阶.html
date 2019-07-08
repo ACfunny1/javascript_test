@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function dg(){
+			var n=arguments[0];
+			if(n <= 1){
+				return 1;
+			}else{
+				return n*dg(n-1);
+			}
+		}
+
+		console.log(dg(3));
+	</script>
+</body>
+</html>
