@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var arr = [3, 4, 6]
+		function squireArr( arr ){
+			for(i=0 ; i<arr.length ; i++){
+				var sum;
+				sum = arr[i] * arr[i];
+				arr[i] = sum;
+			}
+		}
+		squireArr(arr)
+		console.log(arr)  // [9, 16, 36]
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+	function sumOfSquares(){
+		var sum=0 , n=0;
+		for( i=0 ; i<arguments.length ; i++){
+			sum = arguments[i] * arguments[i];
+			n = sum + n;
+		}
+		return n;
+   }
+   var result = sumOfSquares(2,3,4)
+   var result2 = sumOfSquares(1,3)
+   console.log(result)  //29
+   console.log(result2)  //10
+	</script>
+</body>
+</html>
