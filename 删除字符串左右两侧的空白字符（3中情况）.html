@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function trim(str){
+			var regBoth = /^\s.*\s$/g
+			var regLeft = /^\s.*$/g
+			var regRight = /^.*\s$/g
+			var newStr = str.split('')
+			if(str.match(regBoth) != null){
+				newStr.splice(0,1)
+				newStr.splice(newStr.length-1,1)
+				return newStr.join('')
+			}
+			if (str.match(regLeft) != null) {
+				newStr.splice(0,1)
+				return newStr.join('')
+			}
+			if (str.match(regRight) != null) {
+				newStr.splice(newStr.length-1,1)
+				return newStr.join('')
+			}
+		}
+
+		var a = ' 123456 '
+		var b = ' 123456'
+		var c = '123456 '
+
+	</script>
+
+
+</body>
+</html>

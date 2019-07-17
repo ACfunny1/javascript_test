@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+
+		function isValidUsername(str){
+			var reg = /^\w{6,20}$/g
+			var newStr = ''+str
+			if (newStr.match(reg) != null) {
+				console.log('输入合法')
+				return 1
+			}
+			console.log('输入不合法')
+			return 0
+		}
+	</script>
+
+
+</body>
+</html>
