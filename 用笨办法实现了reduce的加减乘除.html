@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function newReduce(x,y,z){
+		if(z=='+'){
+        	x[0]=x[0]+y
+        	var xx = []
+        	var xx = x.concat()
+        	var sum = 0
+        	for (var i = 0; i<xx.length; i++) {
+            	sum = sum+ xx[i]
+        	}
+        	return sum
+    }
+    	if (z=='-') {
+    		x[0]=x[0]+y
+        	var xx = []
+        	var xx = x.concat()
+        	var sum = xx[0]
+        	for (var i = 0; i<xx.length; i++) {
+            	sum = sum- xx[i]
+        	}
+        	return sum+xx[0]//因为sum = xx[0]会使后续循环里的第一步让他们相减得0，但是我希望是xx[0]-xx[1]，没办法只能在后面返回的时候再加上xx[0]
+    	}
+    	if (z=='*') {
+    		x[0]=x[0]+y
+        	var xx = []
+        	var xx = x.concat()
+        	var sum = 1
+        	for (var i = 0; i<xx.length; i++) {
+            	sum = sum* xx[i]
+        	}
+        	return sum
+    	}
+    	if (z=='/') {
+    		x[0]=x[0]+y
+        	var xx = []
+        	var xx = x.concat()
+        	var sum = xx[0]
+        	for (var i = 0; i<xx.length; i++) {
+            	sum = sum/ xx[i]
+        	}
+        	return sum*xx[0]//原理和上面减法一样
+    	}
+}
+
+var a = [100,4,1]
+
+	</script>
+
+
+
+</body>
+</html>
