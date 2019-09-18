@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+<body>
+<div class="one">{{mess}}</div>
+
+	<script type="text/javascript">
+		String.prototype.getMostOften = function(){
+			var max = 0
+			var name = ''
+			var hash = {}
+
+		for(var i = 0 ; i<str.length ; i++){
+			if(!hash[str[i]]){
+				hash[str[i]] = 1
+			}else{
+				hash[str[i]]++
+			}
+		}
+
+		$.each(hash,function(e,v){
+			if(v>max){
+				max = v
+				name = e
+			}
+		})
+
+		return name
+		}
+
+		var str = 'asdasdadjjjjjj';
+		var ch = str.getMostOften();
+		console.log(ch); //d , 因为d 出现了5次
+
+
+
+
+	</script>
+</body>
+</html>
